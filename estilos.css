@@ -60,14 +60,7 @@ body, html {
 
 .content {
     flex: 1;
-    padding: 2%;
-    img {
-        min-width: 48px;
-        max-width: 900px;
-        min-height:48px ;
-        max-height: 48px;
-        object-fit: cover;
-    }
+    padding: 1%;
 }
 
 .text-section {
@@ -83,6 +76,13 @@ body, html {
     min-height: 80px;
     justify-content: center;
     align-items: center;
+    img {
+        min-width: 48px;
+        max-width: 48px;
+        min-height:48px ;
+        max-height: 48px;
+        object-fit: cover;
+    }
 }
 
 .image-link {
@@ -146,9 +146,11 @@ estilo-side-izquierdo {
 }
 
 .publications .content img {
-    width: 100%; /* Estira la imagen para llenar su contenedor */
-    height: 100%; /* Asegura que la imagen mantenga su relación de aspecto */
+    min-width: 614px; /* Estira la imagen para llenar su contenedor */
+    min-height: 614px; /* Asegura que la imagen mantenga su relación de aspecto */
     object-fit: cover; /* Recorte para ajustar la imagen */
+    margin: 0 auto;
+    display: block; 
 }
 
 
@@ -171,14 +173,15 @@ estilo-side-izquierdo {
     height: 48px;
     object-fit: cover;
     background: linear-gradient(90deg, #8a2be2, #ff4500);
+    
 }
 
-.other-users ol {
+.other-users ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-.other-users ol li {
+.other-users ul li {
     counter-increment: none;
 }
 /* Estilos para los enlaces separados */
