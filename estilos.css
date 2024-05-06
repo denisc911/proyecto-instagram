@@ -14,17 +14,16 @@ body, html {
 }
 @media (min-width: 1240px) {
     body {
-        font-size: 18px;
+        font-size: 28px;
     }
 }
-
 
 .container {
     display: flex;
     flex-direction: column;
     height: 100%;
-    margin-left: 1%; /* Margen izquierdo del 1% */
-    margin-right: 1%; /* Margen derecho del 1% */
+    margin-left: 1%; 
+    margin-right: 1%; 
     min-width: 1240px;
 }
 
@@ -32,16 +31,16 @@ body, html {
     display: flex;
     flex: 1;
     flex: 0 0 15%;
-    margin-left: 15%; /* Margen izquierdo del 15% */
-    margin-right: 15%; /* Margen derecho del 15% */
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .sidebar {
-    flex: 0 0 15%; /* Cada sidebar ocupa el 15% del ancho */
+    flex: 0 0 15%; 
     background-color: #f0f0f0;
-    padding: 1%;
-    min-width: 200px;
-    max-width: 250px;
+    padding: 4px;
+    min-width: 250px;
+    max-width: 350px;
     img {
         max-width: 150px;
     }
@@ -68,7 +67,7 @@ body, html {
     background-color: #eee;
 }
 
-/* Agrega estilos para las imágenes circulares */
+/
 .image-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24px, 1fr));
@@ -86,8 +85,8 @@ body, html {
 }
 
 .image-link {
-    display: block; /* Hace que el enlace ocupe todo el espacio disponible */
-    overflow: hidden; /* Evita que los enlaces se desborden */
+    display: block; 
+    overflow: hidden; 
 }
 
 
@@ -95,16 +94,18 @@ body, html {
     text-decoration: none;
     font-size: small;
     color: rgb(68, 68, 68);
-    
+    list-style-type: none; 
+}
+.persona-text ul li {
+    list-style-type: none;
 }
 .circular {
     border-radius: 50%;
     display: flex;
     margin: 4px;
-    border-radius: 50%; /* Esto hace que el borde sea circular */
-    overflow: hidden; /* Para que la imagen se ajuste al borde circular */
-    border: 4px solid orangered; /* Grosor del borde */
-
+    border-radius: 50%; 
+    overflow: hidden; 
+    border: 4px solid orangered; 
 }  
 
 .circular img {
@@ -114,7 +115,7 @@ body, html {
 
 estilo-side-izquierdo {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
+    font-size: x-large;
     color: black;
     text-align: left;
 
@@ -131,7 +132,9 @@ estilo-side-izquierdo {
 
 .menu {
     list-style-type: none; 
-    padding: 0;
+    padding: 4px;
+    top:4px;
+    font-size: 28px;
 }
 
 .menu li a {
@@ -143,12 +146,14 @@ estilo-side-izquierdo {
     width: Hug (220px)px;
     height: Hug (48px)px;
     padding: 12px 12px 12px 12px;
+    line-height: 1.5; 
+    padding-bottom: 0.5em; 
 }
 
 .publications .content img {
-    min-width: 614px; /* Estira la imagen para llenar su contenedor */
-    min-height: 614px; /* Asegura que la imagen mantenga su relación de aspecto */
-    object-fit: cover; /* Recorte para ajustar la imagen */
+    min-width: 614px; 
+    min-height: 614px; 
+    object-fit: cover; 
     margin: 0 auto;
     display: block; 
 }
@@ -164,16 +169,19 @@ estilo-side-izquierdo {
 /* Estilos para el gradiente de los iconos de usuario */
 .other-users .user-profile {
     margin-bottom: 20px;
+    list-style-type: none;
 }
-
+.user-profile {
+    margin-bottom: 20px;
+    list-style-type: none;
+}
 .other-users .user-profile img.circular {
     border-radius: 50%;
     border: 2px solid white;
     width: 48px;
     height: 48px;
     object-fit: cover;
-    background: linear-gradient(90deg, #8a2be2, #ff4500);
-    
+    list-style-type: none;
 }
 
 .other-users ul {
@@ -192,7 +200,6 @@ estilo-side-izquierdo {
 .separated-links a {
     display: block;
     margin-bottom: 10px;
-
     text-decoration: none;
 }
 
@@ -210,3 +217,5 @@ background-color: #f0f0f0;
 color: #333;
 text-decoration: none;
 }
+
+
