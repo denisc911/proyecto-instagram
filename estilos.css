@@ -1,7 +1,11 @@
-/* Estilos específicos para dispositivos móviles */
-@media screen and (max-width: 768px) {
+/* Móviles */
+@media screen and (max-width: 1200px) {
     .container {
         flex-direction: column;
+            max-width: 1024px;
+            padding: 20px;
+            display: flex;
+        
     }
     .sidebar, .sidebar-right {
         width: 200px;
@@ -16,16 +20,9 @@
 /* Estilos generales */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
+    margin: 40px;
     padding: 0;
     background-color: #fafafa;
-}
-
-.container {
-    max-width: 1024px;
-    padding: 20px;
-    display: flex;
-    padding: 10px;
 }
 
 .main-content {
@@ -58,7 +55,7 @@ body {
     border: 1px solid #dbdbdb;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Añadido para evitar la superposición */
+    margin-bottom: 20px; 
 }
 
 .publication-box .header img {
@@ -122,7 +119,6 @@ body {
     padding: 10px;
 }
 
-/* Estilos de la barra lateral derecha */
 .user-profile {
     display: flex;
     align-items: center;
@@ -169,14 +165,13 @@ text-decoration: none;
 list-style-type: none; 
 }
 
-.menu li a {
-    
+.menu li a {  
     img {
         max-width: 24px;
-        top: 4px;
+        top: 8px;
     }
-    width: Hug (220px)px;
-    height: Hug (48px)px;
+    width: 220px;
+    height: 48px;
     padding: 12px 12px 12px 12px;
     text-decoration: none; 
 }
@@ -191,27 +186,19 @@ list-style-type: none;
     color: #333;
     text-decoration: none;
     }
-
-estilo-side-izquierdo {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-    color: black;
-    text-align: left;
-
-}
-
+    
 .iconos img {
     max-width: 24px; 
     max-height: 24px; 
     flex: 1; 
     order: 0; 
     flex-grow: 0;
-    
+
 }
 
 
 .linea {
-    width: 100%; /* Asegura que la tabla ocupe todo el ancho disponible */
+    width: 100%; 
     border-collapse: collapse; /* Fusiona los bordes de las celdas */
 }
 
@@ -245,9 +232,9 @@ estilo-side-izquierdo {
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    background-color: white; /* Cambia el color del fondo según necesites */
+    background-color: white; 
 }
-.avatar-circle::after{
+.avatar-circle::before{
     content: "";
     position: absolute;
     top: -5px;
@@ -255,7 +242,7 @@ estilo-side-izquierdo {
     width: calc(100% + 10px);
     height: calc(100% + 10px);
     border-radius: 50%;
-    background: radial-gradient(violet, #FFA500); /* Cambia los colores del degradado según necesites */
+    background: radial-gradient(violet, #FFA500); 
     z-index: -1;
 }
 .avatar-circle img {
@@ -266,11 +253,6 @@ estilo-side-izquierdo {
     position: relative;
     z-index: 1;
     margin: 10px; /* Ajusta el espacio entre el borde y la imagen según necesites */
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
 }
 
 .main-content {
